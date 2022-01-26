@@ -11,9 +11,11 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var txtuser: UITextField!
     @IBOutlet weak var txtpassword: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        print("Login")
         txtuser.placeholder = "Username"
         txtpassword.placeholder = "Password"
         let userImage = UIImage(named: "person")
@@ -31,5 +33,8 @@ class ViewController: UIViewController {
         txtFiedld.leftViewMode = .always
     }
 
+    @IBAction func txtCreateAcoount(_ sender: Any) {
+        performSegue(withIdentifier: "vcAccount1", sender: self)
+    }
 }
 

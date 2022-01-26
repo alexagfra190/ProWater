@@ -3,19 +3,52 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D1D19AF279B57CB004660E3 /* ViewControllerAcc1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1D19AE279B57CB004660E3 /* ViewControllerAcc1.swift */; };
+		6D1D19B2279B6935004660E3 /* ViewControllerAcc2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1D19B1279B6935004660E3 /* ViewControllerAcc2.swift */; };
+		6D1D19B5279B6944004660E3 /* ViewControllerAcc3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1D19B4279B6944004660E3 /* ViewControllerAcc3.swift */; };
+		6D1D19B8279B6954004660E3 /* ViewControllerAcc4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1D19B7279B6954004660E3 /* ViewControllerAcc4.swift */; };
+		6D1D19BB279B6967004660E3 /* ViewControllerAcc5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1D19BA279B6967004660E3 /* ViewControllerAcc5.swift */; };
+		6D47D578279DE08500A7E04A /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D47D577279DE08500A7E04A /* Canvas.swift */; };
+		6D54AE4A27A1A5A000FA8F98 /* Seller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D54AE4927A1A5A000FA8F98 /* Seller.swift */; };
 		6D5ECFCA2790C5B10054CE94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5ECFC92790C5B10054CE94 /* AppDelegate.swift */; };
 		6D5ECFCC2790C5B10054CE94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5ECFCB2790C5B10054CE94 /* SceneDelegate.swift */; };
 		6D5ECFCE2790C5B10054CE94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5ECFCD2790C5B10054CE94 /* ViewController.swift */; };
 		6D5ECFD12790C5B10054CE94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D5ECFCF2790C5B10054CE94 /* Main.storyboard */; };
 		6D5ECFD32790C5B10054CE94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D5ECFD22790C5B10054CE94 /* Assets.xcassets */; };
 		6D5ECFD62790C5B10054CE94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D5ECFD42790C5B10054CE94 /* LaunchScreen.storyboard */; };
+		6D8AB691279EFFF500AA0F06 /* Icono_aviso-37.svg in Resources */ = {isa = PBXBuildFile; fileRef = 6D8AB690279EFFF500AA0F06 /* Icono_aviso-37.svg */; };
+		6D8AB694279F378C00AA0F06 /* flecha_firma_confirmada-52.svg in Resources */ = {isa = PBXBuildFile; fileRef = 6D8AB693279F378C00AA0F06 /* flecha_firma_confirmada-52.svg */; };
+		6D8AB697279F63F800AA0F06 /* ViewControllerEvidences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8AB696279F63F800AA0F06 /* ViewControllerEvidences.swift */; };
+		6D99164C2799C43000D5AA6B /* flecha_pagina_siguiente-46.svg in Resources */ = {isa = PBXBuildFile; fileRef = 6D99164B2799C43000D5AA6B /* flecha_pagina_siguiente-46.svg */; };
+		6D99164F2799C43B00D5AA6B /* flecha_paginanterior-44.svg in Resources */ = {isa = PBXBuildFile; fileRef = 6D99164E2799C43B00D5AA6B /* flecha_paginanterior-44.svg */; };
+		6D9916522799C47900D5AA6B /* boton_home-45.svg in Resources */ = {isa = PBXBuildFile; fileRef = 6D9916512799C47900D5AA6B /* boton_home-45.svg */; };
+		6D9CC88E27A0C654001F0DE9 /* icono_foto-32.svg in Resources */ = {isa = PBXBuildFile; fileRef = 6D9CC88D27A0C654001F0DE9 /* icono_foto-32.svg */; };
+		6D9CC89127A0C665001F0DE9 /* Icono_galeria-42.svg in Resources */ = {isa = PBXBuildFile; fileRef = 6D9CC89027A0C665001F0DE9 /* Icono_galeria-42.svg */; };
+		6D9CC89427A0D11C001F0DE9 /* icono_camara-41.svg in Resources */ = {isa = PBXBuildFile; fileRef = 6D9CC89327A0D11C001F0DE9 /* icono_camara-41.svg */; };
+		6DA809022798A3BD00749BB5 /* forma_titulos-51.svg in Resources */ = {isa = PBXBuildFile; fileRef = 6DA809012798A3BD00749BB5 /* forma_titulos-51.svg */; };
+		6DA8090D2798AB1800749BB5 /* ViewContentForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA8090C2798AB1800749BB5 /* ViewContentForm.swift */; };
+		6DA809112798CEC800749BB5 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA809102798CEC800749BB5 /* Protocols.swift */; };
+		6DA809152798D2A900749BB5 /* ViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA809142798D2A900749BB5 /* ViewHeader.swift */; };
+		6DFD075B27A0642700552B40 /* NetworkingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD075A27A0642700552B40 /* NetworkingProvider.swift */; };
+		6DFD075F27A0689200552B40 /* Invited.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD075E27A0689200552B40 /* Invited.swift */; };
+		6DFD076327A0772400552B40 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD076227A0772400552B40 /* Strings.swift */; };
+		8599C290E26FF291353FE035 /* Pods_ProWater.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EF568009BAB16C7F37ECC8 /* Pods_ProWater.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10BA2C9D23776595D204C98A /* Pods-ProWater.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProWater.release.xcconfig"; path = "Target Support Files/Pods-ProWater/Pods-ProWater.release.xcconfig"; sourceTree = "<group>"; };
+		42EF568009BAB16C7F37ECC8 /* Pods_ProWater.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProWater.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D1D19AE279B57CB004660E3 /* ViewControllerAcc1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAcc1.swift; sourceTree = "<group>"; };
+		6D1D19B1279B6935004660E3 /* ViewControllerAcc2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAcc2.swift; sourceTree = "<group>"; };
+		6D1D19B4279B6944004660E3 /* ViewControllerAcc3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAcc3.swift; sourceTree = "<group>"; };
+		6D1D19B7279B6954004660E3 /* ViewControllerAcc4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAcc4.swift; sourceTree = "<group>"; };
+		6D1D19BA279B6967004660E3 /* ViewControllerAcc5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAcc5.swift; sourceTree = "<group>"; };
+		6D47D577279DE08500A7E04A /* Canvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Canvas.swift; sourceTree = "<group>"; };
+		6D54AE4927A1A5A000FA8F98 /* Seller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seller.swift; sourceTree = "<group>"; };
 		6D5ECFC62790C5B10054CE94 /* ProWater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProWater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D5ECFC92790C5B10054CE94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D5ECFCB2790C5B10054CE94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +57,23 @@
 		6D5ECFD22790C5B10054CE94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D5ECFD52790C5B10054CE94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D5ECFD72790C5B10054CE94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D8AB690279EFFF500AA0F06 /* Icono_aviso-37.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Icono_aviso-37.svg"; path = "../../../../../Downloads/SVG/Icono_aviso-37.svg"; sourceTree = "<group>"; };
+		6D8AB693279F378C00AA0F06 /* flecha_firma_confirmada-52.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "flecha_firma_confirmada-52.svg"; path = "../../../../../Downloads/SVG/flecha_firma_confirmada-52.svg"; sourceTree = "<group>"; };
+		6D8AB696279F63F800AA0F06 /* ViewControllerEvidences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerEvidences.swift; sourceTree = "<group>"; };
+		6D99164B2799C43000D5AA6B /* flecha_pagina_siguiente-46.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "flecha_pagina_siguiente-46.svg"; path = "../../../../../Downloads/SVG/flecha_pagina_siguiente-46.svg"; sourceTree = "<group>"; };
+		6D99164E2799C43B00D5AA6B /* flecha_paginanterior-44.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "flecha_paginanterior-44.svg"; path = "../../../../../Downloads/SVG/flecha_paginanterior-44.svg"; sourceTree = "<group>"; };
+		6D9916512799C47900D5AA6B /* boton_home-45.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "boton_home-45.svg"; path = "../../../../../Downloads/SVG/boton_home-45.svg"; sourceTree = "<group>"; };
+		6D9CC88D27A0C654001F0DE9 /* icono_foto-32.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "icono_foto-32.svg"; path = "../../../../../Downloads/SVG/icono_foto-32.svg"; sourceTree = "<group>"; };
+		6D9CC89027A0C665001F0DE9 /* Icono_galeria-42.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Icono_galeria-42.svg"; path = "../../../../../Downloads/SVG/Icono_galeria-42.svg"; sourceTree = "<group>"; };
+		6D9CC89327A0D11C001F0DE9 /* icono_camara-41.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "icono_camara-41.svg"; path = "../../../../../Downloads/SVG/icono_camara-41.svg"; sourceTree = "<group>"; };
+		6DA809012798A3BD00749BB5 /* forma_titulos-51.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "forma_titulos-51.svg"; path = "../../../../../Downloads/SVG/forma_titulos-51.svg"; sourceTree = "<group>"; };
+		6DA8090C2798AB1800749BB5 /* ViewContentForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewContentForm.swift; sourceTree = "<group>"; };
+		6DA809102798CEC800749BB5 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		6DA809142798D2A900749BB5 /* ViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHeader.swift; sourceTree = "<group>"; };
+		6DFD075A27A0642700552B40 /* NetworkingProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingProvider.swift; sourceTree = "<group>"; };
+		6DFD075E27A0689200552B40 /* Invited.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invited.swift; sourceTree = "<group>"; };
+		6DFD076227A0772400552B40 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		B5D728EEE7AB6F1740DF65B2 /* Pods-ProWater.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProWater.debug.xcconfig"; path = "Target Support Files/Pods-ProWater/Pods-ProWater.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8599C290E26FF291353FE035 /* Pods_ProWater.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +93,8 @@
 			children = (
 				6D5ECFC82790C5B10054CE94 /* ProWater */,
 				6D5ECFC72790C5B10054CE94 /* Products */,
+				AE813C2463AC3BB6633F3F2F /* Pods */,
+				D865B6CE57F20DD4843F0DCE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +109,11 @@
 		6D5ECFC82790C5B10054CE94 /* ProWater */ = {
 			isa = PBXGroup;
 			children = (
+				6DFD075D27A0687C00552B40 /* Model */,
+				6DA8090F2798CEA700749BB5 /* Utils */,
+				6DA809062798AA7000749BB5 /* View */,
+				6DA809002798A39300749BB5 /* SVG */,
+				6DA808F727989F8600749BB5 /* Controller */,
 				6D5ECFC92790C5B10054CE94 /* AppDelegate.swift */,
 				6D5ECFCB2790C5B10054CE94 /* SceneDelegate.swift */,
 				6D5ECFCD2790C5B10054CE94 /* ViewController.swift */,
@@ -67,6 +125,81 @@
 			path = ProWater;
 			sourceTree = "<group>";
 		};
+		6DA808F727989F8600749BB5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D1D19AE279B57CB004660E3 /* ViewControllerAcc1.swift */,
+				6D1D19B1279B6935004660E3 /* ViewControllerAcc2.swift */,
+				6D1D19B4279B6944004660E3 /* ViewControllerAcc3.swift */,
+				6D1D19B7279B6954004660E3 /* ViewControllerAcc4.swift */,
+				6D1D19BA279B6967004660E3 /* ViewControllerAcc5.swift */,
+				6D8AB696279F63F800AA0F06 /* ViewControllerEvidences.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6DA809002798A39300749BB5 /* SVG */ = {
+			isa = PBXGroup;
+			children = (
+				6D9CC89027A0C665001F0DE9 /* Icono_galeria-42.svg */,
+				6D9CC89327A0D11C001F0DE9 /* icono_camara-41.svg */,
+				6D9CC88D27A0C654001F0DE9 /* icono_foto-32.svg */,
+				6D8AB690279EFFF500AA0F06 /* Icono_aviso-37.svg */,
+				6D8AB693279F378C00AA0F06 /* flecha_firma_confirmada-52.svg */,
+				6D9916512799C47900D5AA6B /* boton_home-45.svg */,
+				6D99164E2799C43B00D5AA6B /* flecha_paginanterior-44.svg */,
+				6D99164B2799C43000D5AA6B /* flecha_pagina_siguiente-46.svg */,
+				6DA809012798A3BD00749BB5 /* forma_titulos-51.svg */,
+			);
+			path = SVG;
+			sourceTree = "<group>";
+		};
+		6DA809062798AA7000749BB5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6DA8090C2798AB1800749BB5 /* ViewContentForm.swift */,
+				6DA809142798D2A900749BB5 /* ViewHeader.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6DA8090F2798CEA700749BB5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6DA809102798CEC800749BB5 /* Protocols.swift */,
+				6D47D577279DE08500A7E04A /* Canvas.swift */,
+				6DFD075A27A0642700552B40 /* NetworkingProvider.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6DFD075D27A0687C00552B40 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6DFD075E27A0689200552B40 /* Invited.swift */,
+				6DFD076227A0772400552B40 /* Strings.swift */,
+				6D54AE4927A1A5A000FA8F98 /* Seller.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AE813C2463AC3BB6633F3F2F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5D728EEE7AB6F1740DF65B2 /* Pods-ProWater.debug.xcconfig */,
+				10BA2C9D23776595D204C98A /* Pods-ProWater.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D865B6CE57F20DD4843F0DCE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42EF568009BAB16C7F37ECC8 /* Pods_ProWater.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D5ECFDA2790C5B10054CE94 /* Build configuration list for PBXNativeTarget "ProWater" */;
 			buildPhases = (
+				F6A23DD36596628DE9E936C3 /* [CP] Check Pods Manifest.lock */,
 				6D5ECFC22790C5B10054CE94 /* Sources */,
 				6D5ECFC32790C5B10054CE94 /* Frameworks */,
 				6D5ECFC42790C5B10054CE94 /* Resources */,
+				CD24745A8606D984FF0AA780 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,13 +259,64 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D8AB691279EFFF500AA0F06 /* Icono_aviso-37.svg in Resources */,
 				6D5ECFD62790C5B10054CE94 /* LaunchScreen.storyboard in Resources */,
+				6DA809022798A3BD00749BB5 /* forma_titulos-51.svg in Resources */,
 				6D5ECFD32790C5B10054CE94 /* Assets.xcassets in Resources */,
+				6D9CC88E27A0C654001F0DE9 /* icono_foto-32.svg in Resources */,
+				6D9916522799C47900D5AA6B /* boton_home-45.svg in Resources */,
+				6D8AB694279F378C00AA0F06 /* flecha_firma_confirmada-52.svg in Resources */,
+				6D9CC89427A0D11C001F0DE9 /* icono_camara-41.svg in Resources */,
+				6D99164C2799C43000D5AA6B /* flecha_pagina_siguiente-46.svg in Resources */,
 				6D5ECFD12790C5B10054CE94 /* Main.storyboard in Resources */,
+				6D99164F2799C43B00D5AA6B /* flecha_paginanterior-44.svg in Resources */,
+				6D9CC89127A0C665001F0DE9 /* Icono_galeria-42.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CD24745A8606D984FF0AA780 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProWater/Pods-ProWater-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProWater/Pods-ProWater-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProWater/Pods-ProWater-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6A23DD36596628DE9E936C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProWater-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6D5ECFC22790C5B10054CE94 /* Sources */ = {
@@ -138,8 +324,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D5ECFCE2790C5B10054CE94 /* ViewController.swift in Sources */,
+				6D1D19BB279B6967004660E3 /* ViewControllerAcc5.swift in Sources */,
+				6DFD076327A0772400552B40 /* Strings.swift in Sources */,
+				6D1D19B8279B6954004660E3 /* ViewControllerAcc4.swift in Sources */,
+				6D54AE4A27A1A5A000FA8F98 /* Seller.swift in Sources */,
 				6D5ECFCA2790C5B10054CE94 /* AppDelegate.swift in Sources */,
+				6DA809152798D2A900749BB5 /* ViewHeader.swift in Sources */,
+				6D8AB697279F63F800AA0F06 /* ViewControllerEvidences.swift in Sources */,
+				6D1D19B2279B6935004660E3 /* ViewControllerAcc2.swift in Sources */,
+				6D1D19B5279B6944004660E3 /* ViewControllerAcc3.swift in Sources */,
+				6DFD075F27A0689200552B40 /* Invited.swift in Sources */,
+				6DFD075B27A0642700552B40 /* NetworkingProvider.swift in Sources */,
+				6D1D19AF279B57CB004660E3 /* ViewControllerAcc1.swift in Sources */,
+				6DA809112798CEC800749BB5 /* Protocols.swift in Sources */,
 				6D5ECFCC2790C5B10054CE94 /* SceneDelegate.swift in Sources */,
+				6DA8090D2798AB1800749BB5 /* ViewContentForm.swift in Sources */,
+				6D47D578279DE08500A7E04A /* Canvas.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +483,7 @@
 		};
 		6D5ECFDB2790C5B10054CE94 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5D728EEE7AB6F1740DF65B2 /* Pods-ProWater.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +503,7 @@
 		};
 		6D5ECFDC2790C5B10054CE94 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10BA2C9D23776595D204C98A /* Pods-ProWater.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
