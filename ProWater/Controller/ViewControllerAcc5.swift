@@ -8,6 +8,8 @@
 import UIKit
 
 class ViewControllerAcc5: UIViewController {
+    
+    var tipoP : Int = 1
     //
     var sellerSignature : UIImage? = nil
     var clientSignature : UIImage? = nil
@@ -25,12 +27,22 @@ class ViewControllerAcc5: UIViewController {
     @IBOutlet weak var btn_navBack: UIButton!
     @IBOutlet weak var btn_navHome: UIButton!
     @IBOutlet weak var btn_navNext: UIButton!
+    //labels
+    @IBOutlet weak var lbl_nombreVendedor: UILabel!
+    @IBOutlet weak var lbl_nombreCliente: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("seller \(sellerSignature)")
-        ivSellerSignature.image = sellerSignature
-        ivClientSignature.image = clientSignature
+        if tipoP == 1 {
+            ivSellerSignature.image = Seller.seller_signature
+            viewClientSignature.isHidden = true
+            
+        }else{
+            ivSellerSignature.image = Seller.seller_signature
+            ivClientSignature.image = Client.signature
+            lbl_nombreVendedor.text = "\(Seller.nombre) \(Seller.apellido)"
+            lbl_nombreCliente.text = "\(Client.nombre) \(Client.apellidos)"
+        }
         configureSVG()
     }
     
@@ -43,7 +55,6 @@ class ViewControllerAcc5: UIViewController {
         ivAviso.setSvgAviso()
         ivSellerConfirm.setConfirmado()
         ivClientConfirm.setConfirmado()
-        viewClientSignature.isHidden = true
     }
 
     @IBAction func navBackPage(_ sender: Any) {
@@ -51,4 +62,45 @@ class ViewControllerAcc5: UIViewController {
         dismiss(animated: false, completion: nil)
     }
     
+    @IBAction func createAccount(_ sender: Any) {
+        if tipoP == 1 {
+            createAccountSeller()
+        }else{
+            for controller in self.navigationController!.viewControllers as Array {
+                if controller.isKind(of: ViewControllerNewApp.self) {
+                    self.navigationController?.popToViewController(controller, animated: true)
+                }
+            }
+        }
+    }
+    
+    func createAccountSeller(){
+        let urlString = "\(Strings.ws_server)\(Strings.ws_registrarVendedor)"
+        let url = URL(string: urlString)!
+        var components = URLComponents(url: url, resolvingAgainstBaseURL: false)
+        
+        
+    
+        components?.queryItems = [
+            URLQueryItem(name: "data_user", value: String(data: User.getJson(), encoding: .utf8)),
+            URLQueryItem(name: "data_seller", value: String(data: Seller.getJson(), encoding: .utf8)),
+            URLQueryItem(name: "firma", value: Seller.seller_signature?.toBase64(format: .png))
+        ]
+        
+        print(components?.queryItems)
+        
+        NetworkingProvider.shared.consulta(urlString: urlString, parameters: components!) { (data) in
+            
+            DispatchQueue.main.async {
+                do{
+                    print(String(data: data, encoding: .utf8))
+                    self.navigationController?.popToRootViewController(animated: true)
+                }catch let error{
+                    print(error)
+                }
+            }
+        } failure: { (error) in
+            print(error)
+        }
+    }
 }

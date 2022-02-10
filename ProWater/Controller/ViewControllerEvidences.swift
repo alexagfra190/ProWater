@@ -12,42 +12,47 @@ import SwiftUI
 
 class ViewControllerEvidences: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     
-    @IBOutlet weak var imgPreview: UIImageView!
+    @IBOutlet weak var headerContainer: UIView!
+    let evidences = Seller()
     //Header
     @IBOutlet weak var viewHeader: UIImageView!
-    @IBOutlet weak var btn_next: UIButton!
-    @IBOutlet weak var btn_navBack: UIButton!
    
-    @IBOutlet weak var btn_navNext: UIButton!
-    @IBOutlet weak var btn_navHome: UIButton!
     @IBOutlet weak var btnCamera: UIButton!
     @IBOutlet weak var btnGalery: UIButton!
+    var seleccionable : String = ""
+    var imageSelectionable : UIImage?
+    
+    
+    @IBOutlet weak var reusableHeader: reusableHeader!
+    
+    
+    let header : HeaderContainer? = nil
+    
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         print("comienzo")
-        configureSVG()
-
+        
+        UserDefaults.standard.setValue("UNO", forKey: "title")
+        reusableHeader.reusableHeaderTitle.text = "Evidences"
+        //header.changeTitle(title: "UNO")
     }
     
-    func configureSVG(){
-        viewHeader.viewHeader()
-        btn_navBack.svgBack()
-        btnCamera.svgCamera()
-        btnGalery.svgGalery()
-        btn_navNext.svgNext()
-        btn_navHome.svgHome()
-        //btn_navHome.isHidden = true
-        btn_navBack.isHidden = true
-        btn_navNext.isHidden = true
-        
+    func openPhoto(selection: String){
+        seleccionable=selection
+        performSegue(withIdentifier: "VCPhotoSegue", sender: self)
     }
+
     @IBAction func openCamera(_ sender: Any) {
         print("Camera")
+        //openPhoto(selection: "camara")
         showImagePicker(selectedSource: .camera)
     }
     
     @IBAction func openGalery(_ sender: Any) {
         print("Galeria")
+        //openPhoto(selection: "galeria")
         showImagePicker(selectedSource: .photoLibrary)
     }
     
@@ -67,10 +72,21 @@ class ViewControllerEvidences: UIViewController,UIImagePickerControllerDelegate,
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let selectedImage = info[.editedImage] as? UIImage{
-            imgPreview.image = selectedImage
+            imageSelectionable = selectedImage
+            
+            Client.evidences.array_evidences.append(selectedImage)
+            print(Client.evidences.array_evidences)
+            openPhoto(selection: "camara")
+            
         }else{
             print("Image not found")
         }
         picker.dismiss(animated: true, completion: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destino = segue.destination as? ViewControllerPhoto{
+            destino.imageSelectioned = imageSelectionable
+        }
     }
 }

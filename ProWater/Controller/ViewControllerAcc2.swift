@@ -45,9 +45,13 @@ class ViewControllerAcc2: UIViewController {
     }
     
     func setData(){
-        Seller.email = et_email.text
-        Seller.username = et_username.text
-        Seller.password = et_password.text
+        Seller.email = et_email.text!
+        Seller.username = et_username.text!
+        Seller.password = et_password.text!
+        
+        User.email = et_email.text ?? ""
+        User.username = et_username.text ?? ""
+        User.password = et_password.text ?? ""
     }
     
     func loadData(){

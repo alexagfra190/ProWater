@@ -129,8 +129,8 @@ extension UIViewController {
         let tap : UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         self.view.addGestureRecognizer(tap)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(KeyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+        //NotificationCenter.default.addObserver(self, selector: #selector(KeyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        //NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     @objc func dismissKeyboard(){
@@ -149,5 +149,26 @@ extension UIViewController {
         if self.view.frame.origin.y != 0 {
             self.view.frame.origin.y = 0
         }
+    }
+    
+
+}
+
+public enum ImageFormat {
+    case png
+    case jpeg(CGFloat)
+}
+
+extension UIImage {
+    func toBase64(format: ImageFormat) -> String? {
+        var imageData : Data?
+        switch format {
+        case .png:
+            imageData = self.pngData()
+        case .jpeg(let compression):
+            imageData = self.jpegData(compressionQuality: compression)
+        }
+        
+        return imageData?.base64EncodedString()
     }
 }

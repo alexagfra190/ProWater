@@ -32,9 +32,9 @@ class ViewControllerAcc3: UIViewController {
     }
     
     func setData(){
-        Seller.nombre_banco = et_bankName.text
-        Seller.numero_ruta = et_routingNumber.text
-        Seller.numero_cuenta = et_accountNumber.text
+        Seller.nombre_banco = et_bankName.text!
+        Seller.numero_ruta = et_routingNumber.text!
+        Seller.numero_cuenta = et_accountNumber.text!
     }
     
     func loadData(){

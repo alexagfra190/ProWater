@@ -47,15 +47,15 @@ class ViewControllerAcc1: UIViewController {
     }
     
     func setData(){
-        Seller.nombre = et_firstName.text
-        Seller.apellido = et_lastName.text
-        Seller.telefono_casa = et_homePhone.text
-        Seller.telefono_celular = et_cellPhone.text
-        Seller.direccion = et_address.text
-        Seller.ciudad = et_city.text
-        Seller.estado = et_state.text
-        Seller.cp = et_cp.text
-        Seller.lugar_trabajo = et_workPlace.text
+        Seller.nombre = et_firstName.text!
+        Seller.apellido = et_lastName.text!
+        Seller.telefono_casa = et_homePhone.text!
+        Seller.telefono_celular = et_cellPhone.text!
+        Seller.direccion = et_address.text!
+        Seller.ciudad = et_city.text!
+        Seller.estado = et_state.text!
+        Seller.cp = et_cp.text!
+        Seller.lugar_trabajo = et_workPlace.text!
     }
     
     func loadData(){
@@ -79,4 +79,5 @@ class ViewControllerAcc1: UIViewController {
         navigationController?.popViewController(animated: true)
         dismiss(animated: false, completion: nil)
     }
+    
 }

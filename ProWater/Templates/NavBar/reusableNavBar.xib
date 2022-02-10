@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="reusableNavBar" customModule="ProWater" customModuleProvider="target">
+            <connections>
+                <outlet property="btnHome" destination="BMN-Fr-atc" id="EJQ-Ob-Zgw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="503" height="189"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="n88-Nq-umn">
+                    <rect key="frame" x="25" y="44" width="453" height="111"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CVM-tG-y9W">
+                            <rect key="frame" x="0.0" y="0.0" width="151" height="111"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flecha_paginanterior-44" translatesAutoresizingMaskIntoConstraints="NO" id="BsS-g7-7ie">
+                                    <rect key="frame" x="50.5" y="30.5" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="3WQ-C1-uC2"/>
+                                        <constraint firstAttribute="width" constant="50" id="zD9-O1-qVA"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" name="Blue"/>
+                            <constraints>
+                                <constraint firstItem="BsS-g7-7ie" firstAttribute="centerX" secondItem="CVM-tG-y9W" secondAttribute="centerX" id="hqa-YC-bdY"/>
+                                <constraint firstItem="BsS-g7-7ie" firstAttribute="centerY" secondItem="CVM-tG-y9W" secondAttribute="centerY" id="u5q-t2-b9Y"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1hr-Lg-mBm">
+                            <rect key="frame" x="151" y="0.0" width="151" height="111"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMN-Fr-atc">
+                                    <rect key="frame" x="45.5" y="25.5" width="60" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="60" id="MW8-Fw-m9E"/>
+                                        <constraint firstAttribute="height" constant="60" id="ZIO-TI-ujv"/>
+                                    </constraints>
+                                    <state key="normal" image="boton_home-45"/>
+                                    <connections>
+                                        <action selector="btnHomeAction2:" destination="-1" eventType="touchUpInside" id="vfW-Vf-dhy"/>
+                                        <action selector="btnHomeAction:" destination="-1" eventType="touchUpInside" id="EoP-As-oTy"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            <constraints>
+                                <constraint firstItem="BMN-Fr-atc" firstAttribute="centerY" secondItem="1hr-Lg-mBm" secondAttribute="centerY" id="CZX-Xg-rho"/>
+                                <constraint firstItem="BMN-Fr-atc" firstAttribute="centerX" secondItem="1hr-Lg-mBm" secondAttribute="centerX" id="fWZ-eC-hhY"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dLc-Q9-Rhc">
+                            <rect key="frame" x="302" y="0.0" width="151" height="111"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flecha_pagina_siguiente-46" translatesAutoresizingMaskIntoConstraints="NO" id="ksv-yJ-vmD">
+                                    <rect key="frame" x="50.5" y="30.5" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="WRQ-MM-2rc"/>
+                                        <constraint firstAttribute="height" constant="50" id="orG-tC-Daq"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemPinkColor"/>
+                            <constraints>
+                                <constraint firstItem="ksv-yJ-vmD" firstAttribute="centerX" secondItem="dLc-Q9-Rhc" secondAttribute="centerX" id="GD4-sY-BDy"/>
+                                <constraint firstItem="ksv-yJ-vmD" firstAttribute="centerY" secondItem="dLc-Q9-Rhc" secondAttribute="centerY" id="rJb-hG-E9h"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="pw_black"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="n88-Nq-umn" secondAttribute="trailing" constant="25" id="1X1-5G-3TZ"/>
+                <constraint firstItem="n88-Nq-umn" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="7oQ-BF-e0B"/>
+                <constraint firstItem="n88-Nq-umn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="7q9-Dt-0Mw"/>
+                <constraint firstItem="n88-Nq-umn" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Vf2-jh-2xL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="321.01449275362319" y="-209.26339285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="boton_home-45" width="80" height="80"/>
+        <image name="flecha_pagina_siguiente-46" width="65" height="65"/>
+        <image name="flecha_paginanterior-44" width="65" height="65"/>
+        <namedColor name="Blue">
+            <color red="0.10980392156862745" green="0.60784313725490191" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="pw_black">
+            <color red="0.12941176470588237" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

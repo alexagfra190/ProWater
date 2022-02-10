@@ -8,6 +8,8 @@
 import UIKit
 
 class ViewControllerAcc4: UIViewController {
+    //Tipo
+    var tipoP : Int = 1 //1:seller,2:client
     
     //Canvas
     let canvas = Canvas()
@@ -25,8 +27,19 @@ class ViewControllerAcc4: UIViewController {
     //scrollView
     @IBOutlet weak var viewScroll: UIScrollView!
     
+    //Labels
+    @IBOutlet weak var lbl_title: UILabel!
+    @IBOutlet weak var lbl_name: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        if tipoP == 1 {
+            lbl_title.text = "Seller's signature / firma de vendedor"
+            lbl_name.text = "\(Seller.nombre) \(Seller.apellido)"
+        }else{
+            lbl_title.text = "Client's signature / firma de cliente"
+            lbl_name.text = "\(Client.nombre) \(Client.apellidos)"
+        }
         
         viewScroll.isScrollEnabled = false
         configureSVG()
@@ -61,6 +74,12 @@ class ViewControllerAcc4: UIViewController {
     }
     @IBAction func nextPage(_ sender: Any) {
         if canvas.bandera{
+            if tipoP == 1 {
+                Seller.seller_signature = canvas.geSignature()
+            }else{
+                Client.signature = canvas.geSignature()
+            }
+            
             performSegue(withIdentifier: "vcAccount4", sender: self)
         }
     }
@@ -70,7 +89,7 @@ class ViewControllerAcc4: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vcAcc5 = segue.destination as? ViewControllerAcc5{
-            vcAcc5.sellerSignature = canvas.geSignature()
+            vcAcc5.tipoP = self.tipoP
         }
     }
 }
